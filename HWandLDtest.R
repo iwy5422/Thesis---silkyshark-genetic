@@ -101,15 +101,6 @@ silky.hwe
 
 
 
-sm.summary <- summary(sm.genend)
-sm.summary
-sm.hwe <-hw.test(x=sm.genend, permut = TRUE, nsim = 1000, res.type = 'matrix')
-sm.hwe
-nm.hwe <-hw.test(x=nm.genend, permut = TRUE, nsim = 1000, res.type = 'matrix')
-nm.hwe
-
-
-
 ###NJ tree
 indo.dist <- dist(x=indosilky.genind, method = 'euclidean', diag = T, upper = T)
 indo.dist.pop <- dist.genpop(x=indosilky.genpop, method = 1, diag = T, upper = T)
